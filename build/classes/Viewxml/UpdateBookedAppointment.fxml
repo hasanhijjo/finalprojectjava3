@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="508.0" prefWidth="616.0" style="-fx-background-color: #545B77;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UpdateBookedController">
+    <children>
+        <Label layoutX="69.0" layoutY="92.0" prefHeight="30.0" prefWidth="213.0" text="Appointment Date" textFill="#5c8984">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font></Label>
+        <Label layoutX="70.0" layoutY="160.0" text="Appointment Day" textFill="#5c8984">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font></Label>
+        <Label layoutX="70.0" layoutY="234.0" text="Appointment time " textFill="#5c8984">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font></Label>
+        <Label layoutX="70.0" layoutY="301.0" text="Status" textFill="#5c8984">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font></Label>
+        <TextField fx:id="dayE" layoutX="315.0" layoutY="155.0" prefHeight="41.0" prefWidth="220.0" style="-fx-background-color: #F2D8D8;" />
+        <TextField fx:id="timeE" layoutX="315.0" layoutY="229.0" prefHeight="41.0" prefWidth="220.0" style="-fx-background-color: #F2D8D8;" />
+        <Label layoutX="133.0" layoutY="14.0" text="Update Booked Appointment" textFill="#f2d8d8">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font>
+        </Label>
+        <Button fx:id="RegisterButton" layoutX="232.0" layoutY="434.0" mnemonicParsing="false" onAction="#updateBookedAppointment" prefHeight="35.0" prefWidth="129.0" style="-fx-background-color: #d66b1e;" text="Update " textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <DatePicker fx:id="dateE" layoutX="315.0" layoutY="87.0" prefHeight="41.0" prefWidth="220.0" style="-fx-background-color: #F2D8D8;" />
+      <ComboBox fx:id="status" layoutX="315.0" layoutY="296.0" prefHeight="41.0" prefWidth="220.0" />
+      <Label layoutX="70.0" layoutY="367.0" text="Comment" textFill="#5c8984">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="comment" layoutX="315.0" layoutY="362.0" prefHeight="41.0" prefWidth="220.0" style="-fx-background-color: #F2D8D8;" />
+    </children>
+</AnchorPane>

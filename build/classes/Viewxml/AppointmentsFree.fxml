@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="796.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AppointmentsFreeController">
+   <children>
+      <Accordion layoutX="171.0" layoutY="14.0" />
+      <AnchorPane fx:id="header" layoutX="-1.0" layoutY="-2.0" prefHeight="68.0" prefWidth="808.0" style="-fx-background-color: #4d4444;">
+
+         <children>
+            <Button layoutX="236.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="151.0" style="-fx-background-color: c67e2d;" text="Free Appointments " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button layoutX="387.0" mnemonicParsing="false" onAction="#bookedAppointment" prefHeight="55.0" prefWidth="189.0" style="-fx-background-color: #3d7982;" text="Appointment Booked" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#newPatient" prefHeight="55.0" prefWidth="118.0" style="-fx-background-color: #3d7982;" text="New Patient " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button layoutX="670.0" layoutY="12.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: d66b1e;" text="logout " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button layoutX="118.0" mnemonicParsing="false" onAction="#dashboard" prefHeight="55.0" prefWidth="118.0" style="-fx-background-color: #3d7982;" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="49.0" prefHeight="423.0" prefWidth="807.0" style="-fx-background-color: #545B77;">
+         <children>
+            <TableView fx:id="tableView" layoutX="157.0" layoutY="60.0" prefHeight="246.0" prefWidth="520.0" style="-fx-background-color: Gray;">
+              <columns>
+                  <TableColumn fx:id="id" prefWidth="34.0" text="#" />
+                <TableColumn fx:id="date" prefWidth="195.0" text="appointment date" />
+                <TableColumn fx:id="day" prefWidth="134.0" text="appointment day" />
+                  <TableColumn fx:id="time" prefWidth="163.0" text="appointment time " />
+                  <TableColumn fx:id="status" prefWidth="75.0" text="status " />
+              </columns>
+            </TableView>
+            <Button fx:id="deleteappointmentButton" layoutX="330.0" layoutY="337.0" mnemonicParsing="false" onAction="#deleteAppointment" style="-fx-background-color: FA9884;" text="delete appointment" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font></Button>
+            <Button fx:id="updateappointmentButton" layoutX="138.0" layoutY="337.0" mnemonicParsing="false" onAction="#updateAppointmentPage" style="-fx-background-color: FA9884;" text="update appointment " textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font></Button>
+            <Button fx:id="newappointmentButton" layoutX="515.0" layoutY="337.0" mnemonicParsing="false" onAction="#newAppointment" style="-fx-background-color: FA9884;" text="new appointment " textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font></Button>
+            <Label layoutX="296.0" layoutY="14.0" prefHeight="35.0" prefWidth="216.0" text="Free appointments " textFill="#f2d8d8">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
